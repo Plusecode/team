@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220">
+
+<g transform="translate(20,20) scale(0.35)">
+<rect x="16" y="16" width="480" height="480" rx="72" fill="#fff" stroke="#ddd"/>
+<g fill="#111"><rect x="90" y="110" width="12" height="180"/><rect x="118" y="110" width="20" height="180"/><rect x="154" y="110" width="12" height="180"/><rect x="182" y="110" width="24" height="180"/></g>
+<defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+<path d="M120 175 L215 340 Q235 375 256 375 Q277 375 297 340 L392 95" fill="none" stroke="url(#g2)" stroke-width="42" stroke-linecap="round"/>
+</g>
+<text x="240" y="130" font-family="Arial" font-size="72" font-weight="700" fill="#111">Vector</text>
+<text x="470" y="130" font-family="Arial" font-size="72" font-weight="700" fill="#4F46E5">Barcode</text>
+<text x="245" y="180" font-family="Arial" font-size="26" fill="#555">Professional Barcode Toolkit</text>
+</svg>

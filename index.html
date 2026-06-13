@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barzig Lab Inc. — AI-Powered Barcode & Inventory Solutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+    <img src="vectorbarcode_app_icon.svg" alt="VectorBarcode icon" style="width:36px;height:36px;border-radius:8px">
+    <span class="logo">Barzig<span>Lab</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Support</a>
+    <a href="products.html" class="nav-cta">Get VectorBarcode</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="tag"><span class="tag-dot"></span>AI-POWERED · CANADIAN · v1.0</div>
+    <h1>Barcode &amp; Inventory<br><em>Intelligence</em><br>for Small Business</h1>
+    <p class="hero-sub">AI-powered barcode and inventory solutions built for small warehouses and retail businesses. Industry-standard formats. Offline-first. Export-ready in SVG, PDF, PNG and EPS.</p>
+    <div class="cta-row">
+      <a href="products.html" class="btn-primary">→ Explore VectorBarcode</a>
+      <a href="about.html" class="btn-secondary">About Barzig Lab</a>
+    </div>
+  </div>
+  <div class="app-mockup">
+    <div class="app-header">
+      <span style="color:var(--muted);font-size:11px;font-family:'DM Mono',monospace">Menu</span>
+      <span class="app-header-title">Vector<span>Barcode</span></span>
+      <span style="color:var(--muted);font-size:11px">Settings</span>
+    </div>
+    <div class="app-body">
+      <div class="app-banner">
+        <div>
+          <div class="app-banner-text">Create Professional<br>Barcodes Easily</div>
+          <div class="app-banner-sub">Generate professional barcodes offline.</div>
+        </div>
+        <div class="app-banner-icon">▐▌▐▌</div>
+      </div>
+      <div class="app-tabs">
+        <div class="app-tab active">Single</div>
+        <div class="app-tab">🔒 Batch</div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:8px;font-family:'DM Mono',monospace">Barcode type</div>
+      <div class="app-type-row">
+        <div class="app-type-btn active">● 1D Barcode</div>
+        <div class="app-type-btn">○ 2D / QR</div>
+      </div>
+      <div class="app-bc-grid" id="bcGrid"></div>
+      <div class="app-nav">
+        <div class="app-nav-item active"><div class="app-nav-icon">⌂</div>Home</div>
+        <div class="app-nav-item"><div class="app-nav-icon" style="background:var(--surface)">↺</div>History</div>
+        <div class="app-nav-item"><div class="app-nav-icon" style="background:var(--surface)">▣</div>Scan</div>
+        <div class="app-nav-item"><div class="app-nav-icon" style="background:var(--surface)">☆</div>Favorites</div>
+        <div class="app-nav-item"><div class="app-nav-icon" style="background:var(--surface)">···</div>More</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:960px;margin:0 auto;padding:0 80px 64px">
+  <div class="stats-row" style="padding:28px 0;border:none;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06)">
+    <div class="stat-item" style="padding-left:0"><div class="stat-num">12+</div><div class="stat-label">Barcode formats</div></div>
+    <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Export formats</div></div>
+    <div class="stat-item"><div class="stat-num">✓</div><div class="stat-label">Standard-format barcodes</div></div>
+    <div class="stat-item"><div class="stat-num">6</div><div class="stat-label">Languages supported</div></div>
+    <div class="stat-item" style="border-right:none"><div class="stat-num">100%</div><div class="stat-label">Offline operation</div></div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-label">Core Capabilities</div>
+  <div class="section-title">Everything your warehouse needs to run smoothly</div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="fc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="3" height="18"/><rect x="8" y="3" width="1.5" height="18"/><rect x="11" y="3" width="3" height="18"/><rect x="16" y="3" width="1.5" height="18"/><rect x="19" y="3" width="2" height="18"/></svg></div>
+      <h3>1D &amp; 2D Barcode Generation</h3>
+      <p>EAN-13, EAN-8, UPC-A, EAN-13, EAN-8, UPC-A, Code 39, Code 128, ITF-14, QR Code, DataMatrix, PDF417 — all in one app.</p>
+    </div>
+    <div class="feature-card">
+      <div class="fc-icon"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+      <h3>Scan &amp; Regenerate</h3>
+      <p>Use the built-in camera scanner to capture any barcode, then instantly regenerate it in a new format or color. Zero network calls.</p>
+    </div>
+    <div class="feature-card">
+      <div class="fc-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <h3>Batch CSV Generation</h3>
+      <p>Import a CSV and generate hundreds of barcodes in one step. Perfect for product launches, relabeling runs, and inventory resets.</p>
+    </div>
+    <div class="feature-card">
+      <div class="fc-icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+      <h3>Multi-Format Export</h3>
+      <p>Export as SVG, PDF, PNG or EPS at 300, 600 or 1200 DPI. Print-ready at any scale — from shelf labels to pallet sheets.</p>
+    </div>
+    <div class="feature-card">
+      <div class="fc-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h3>Offline &amp; Private</h3>
+      <p>All barcode generation and scanning happens on-device. No data is uploaded to any server. Ideal for secure warehouse environments.</p>
+    </div>
+    <div class="feature-card">
+      <div class="fc-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+      <h3>History &amp; Favorites</h3>
+      <p>Every generated barcode is saved to History with full metadata. Pin barcodes to Favorites for quick re-export and print label workflows.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+  <div class="section-label">Who It's For</div>
+  <div class="section-title">Built for small operations, not enterprise complexity</div>
+  <div class="callout" style="margin:0 0 0 0">
+    <h3>AI-powered barcode and inventory solutions for small warehouses and retail businesses</h3>
+    <p>Barzig Lab Inc. is a Canadian software company focused on barcode technology, inventory systems, and warehouse workflows. We build tools that give small and mid-size operations the same barcode intelligence that large enterprises pay millions for — without the implementation headache or the enterprise price tag.</p>
+  </div>
+</div>
+
+<footer>
+  <div style="display:flex;align-items:center;gap:10px">
+    <img src="vectorbarcode_app_icon.svg" alt="VectorBarcode" style="width:28px;height:28px;border-radius:6px">
+    <span class="footer-logo">Barzig<span>Lab</span> Inc.</span>
+  </div>
+  <p>© 2026 Barzig Lab Inc. · Toronto, Canada</p>
+  <div class="footer-links">
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="legal-notices.html">Legal Notices</a>
+    <a href="support.html">Support</a>
+  </div>
+</footer>
+
+<script>
+const formats=[['EAN-13',[2,1,3,1,2,4,1,2]],['EAN-8',[2,1,3,2,1,3,1]],['Code 128',[1,3,2,1,4,1,2,3]],['Code 39',[3,1,2,1,3,2,1,3]],['Code 128',[2,3,1,2,1,4,2,1]],['ITF-14',[1,2,3,1,2,1,3,2]]];
+const grid=document.getElementById('bcGrid');
+formats.forEach(([label,bars],i)=>{
+  const card=document.createElement('div');
+  card.className='app-bc-card'+(i===0?' active':'');
+  const barsDiv=document.createElement('div');
+  barsDiv.className='app-bc-bars';
+  bars.forEach(w=>{
+    const b=document.createElement('div');
+    b.className='app-bc-bar';
+    b.style.cssText=`width:${w*2}px;height:${14+Math.random()*10}px`;
+    barsDiv.appendChild(b);
+  });
+  const lbl=document.createElement('div');
+  lbl.className='app-bc-label';
+  lbl.textContent=label;
+  card.appendChild(barsDiv);
+  card.appendChild(lbl);
+  card.onclick=()=>{document.querySelectorAll('.app-bc-card').forEach(c=>c.classList.remove('active'));card.classList.add('active')};
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>
