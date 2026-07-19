@@ -64,73 +64,21 @@
     }
     footer {
       margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
       color: var(--muted);
       font-size: 0.95rem;
-    }
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      margin-top: 0.75rem;
-    }
-    nav {
-      border-bottom: 1px solid var(--border);
-      background: var(--soft);
-    }
-    .nav-inner {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 14px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .brand {
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: #111827;
-      text-decoration: none;
-    }
-    .brand span {
-      color: var(--accent);
-    }
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-    .nav-links .active {
-      font-weight: 600;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <div class="nav-inner">
-      <a class="brand" href="index.html">Barzig<span>Lab</span></a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a class="active" href="ean-upc-to-qr-privacy-policy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="support.html">Support</a>
-      </div>
-    </div>
-  </nav>
-
   <main>
     <h1>Privacy Policy</h1>
-    <p class="updated"><strong>Last updated:</strong> July 19, 2026</p>
+    <p class="updated"><strong>Last updated:</strong> July 19, 2026 (rev. 2)</p>
 
     <p>EAN UPC to QR is provided by Barzig Lab Inc. This Privacy Policy explains how the app handles information when you convert EAN, UPC, GTIN, or other supported barcode formats into GS1 Digital Link QR codes.</p>
 
     <section class="summary">
       <h2>Summary</h2>
-      <p>EAN UPC to QR does not require an account, does not sell personal information, and does not share personal information with third parties except as necessary to provide optional features that you choose to use, such as Google Sheets integration.</p>
+      <p>EAN UPC to QR does not require an account, does not sell personal information, and does not share personal information with third parties except as necessary to provide optional features that you choose to use, such as Google Drive integration.</p>
       <p>The app primarily processes barcode information provided by you to generate GS1 Digital Link QR codes and related conversion data.</p>
     </section>
 
@@ -153,51 +101,49 @@
       <li>Generate GS1 Digital Link QR codes.</li>
       <li>Create conversion status records, error messages, reports, or export files.</li>
     </ul>
-    <p>These conversion operations are performed locally on your device unless you choose to use an optional cloud-connected feature, such as Google Sheets synchronization.</p>
+    <p>These conversion operations are performed locally on your device unless you choose to use an optional cloud-connected feature, such as Google Sheets synchronization or exporting a ZIP file of barcode images to Google Drive.</p>
 
     <h3>CSV Import and Export</h3>
     <p>The app may allow you to import barcode lists from CSV files and export conversion results, QR codes, or reports.</p>
     <p>Imported and exported files are stored only on your device unless you choose to share, upload, or save them using another application or service.</p>
 
-    <h2>Google Sheets Integration</h2>
-    <p>Google Sheets integration is optional. The app only accesses Google Sheets if you choose to connect your Google account and grant permission through Google's authorization process.</p>
+    <h2>Google Drive Integration</h2>
+    <p>Google Drive integration is optional. The app only accesses your Google Drive or Google Sheets if you choose to connect your Google account and grant permission through Google's authorization process. This integration powers two optional features: (1) reading and writing barcode conversion data in a Google Sheet you select, and (2) exporting a ZIP file of generated barcode images to a Google Drive folder you select.</p>
 
-    <h3>Google Permissions (Scopes) We Request</h3>
-    <p>When you connect your Google account, the app requests the following Google API scope:</p>
+    <h3>Google Permissions (Scope) We Request</h3>
+    <p>When you connect your Google account, the app requests one Google API scope:</p>
     <ul>
-      <li><strong>https://www.googleapis.com/auth/spreadsheets</strong> &mdash; allows the app to view and manage the Google Sheets spreadsheets you choose to use with the app.</li>
+      <li><strong>https://www.googleapis.com/auth/drive.file</strong> &mdash; a per-file, non-sensitive Google Drive scope. It only gives the app access to files the app itself creates, and to files or folders you individually and explicitly select through Google's own file picker (Google Picker API). It does not give the app access to your wider Google Drive, Gmail, Calendar, Contacts, or any other Google product or data type.</li>
     </ul>
-    <p>You will see this permission listed on Google's own consent screen before you grant access, and you can decline or stop the connection at any time.</p>
+    <p>The app does not request the broader <code>spreadsheets</code> or <code>drive</code> scopes. This means the app can never see, list, or touch any Drive file or spreadsheet that you have not either created with the app or explicitly selected via the picker.</p>
+    <p>Two flows use this scope:</p>
+    <ul>
+      <li><strong>Creating new files</strong> (a new barcode ZIP export, or a new spreadsheet) &mdash; happens automatically once you authorize the app; no picker step is needed because drive.file automatically grants the app access to files it creates.</li>
+      <li><strong>Opening an existing file</strong> (a spreadsheet you already have, or a Drive folder you want a ZIP exported into) &mdash; the app opens Google's own Picker dialog, and you explicitly choose the specific file or folder. Only that item becomes accessible to the app.</li>
+    </ul>
 
     <h3>Google Data the App May Access</h3>
-    <p>If you authorize Google Sheets access, the app may read barcode-related rows from spreadsheets selected or authorized by you and may write conversion results back to those spreadsheets.</p>
-    <p>The app may read or write information such as:</p>
+    <p>Depending on which optional feature you use, the app may access:</p>
     <ul>
-      <li>Product name or item description.</li>
-      <li>Original EAN, UPC, or GTIN value.</li>
-      <li>Detected barcode type.</li>
-      <li>GTIN-14 value.</li>
-      <li>Generated GS1 Digital Link URL.</li>
-      <li>Conversion status.</li>
-      <li>Error messages.</li>
-      <li>File name or export reference for generated QR codes.</li>
-      <li>Last updated timestamp.</li>
+      <li>Rows in a spreadsheet you created with the app or selected via the Picker, including: product name or item description, original EAN/UPC/GTIN value, detected barcode type, GTIN-14 value, generated GS1 Digital Link URL, conversion status, error messages, file name or export reference, and last updated timestamp.</li>
+      <li>The identity (file/folder ID and name) of the Google Drive folder you select via the Picker as the destination for a barcode image ZIP export.</li>
+      <li>The barcode image ZIP file itself, which the app creates and uploads into that folder.</li>
     </ul>
-    <p>The app does not access your Gmail, Google Drive files outside of Sheets, Google Calendar, Google Contacts, or any other Google product or data type.</p>
+    <p>The app does not access your Gmail, Google Calendar, Google Contacts, or any Drive files or folders other than the ones you create with the app or explicitly select via the Picker.</p>
 
     <h3>How Google Data Is Used</h3>
-    <p>Google Sheets data is used only to provide the user-facing features shown in the app:</p>
+    <p>Google user data accessed through this integration is used only to provide the user-facing features shown in the app:</p>
     <ul>
-      <li>Importing barcode lists you select from a connected spreadsheet.</li>
+      <li>Importing barcode lists from a spreadsheet you selected or created.</li>
       <li>Converting the EAN, UPC, or GTIN values found in that spreadsheet.</li>
-      <li>Writing generated GTIN-14 values and GS1 Digital Link URLs back to the spreadsheet.</li>
-      <li>Recording conversion status and error messages in the spreadsheet so you can track progress.</li>
+      <li>Writing generated GTIN-14 values, GS1 Digital Link URLs, conversion status, and error messages back to that spreadsheet.</li>
+      <li>Creating a ZIP file of the barcode images you generate in the app, and uploading it to the Drive folder you selected.</li>
     </ul>
-    <p>Barzig Lab Inc. does not use Google Sheets data for advertising, marketing, profiling, building user profiles, training AI or machine learning models, or selling personal information. We do not use Google user data for any purpose other than the app features described above.</p>
+    <p>Barzig Lab Inc. does not use Google user data for advertising, marketing, profiling, building user profiles, training AI or machine learning models, or selling personal information. We do not use Google user data for any purpose other than the app features described above.</p>
 
     <h3>Sharing, Transfer, and Disclosure of Google Data</h3>
     <p>Barzig Lab Inc. does not share, sell, rent, transfer, or disclose Google user data to any third party, advertiser, analytics provider, or data broker.</p>
-    <p>Google user data is transmitted directly between your device and Google's own servers using Google's official Sheets API, over an encrypted connection. It does not pass through, and is not routed to, stored on, or otherwise accessible to, any server operated by Barzig Lab Inc. Google itself processes this data as the Google Sheets service you have chosen to use, subject to Google's own privacy practices.</p>
+    <p>Google user data is transmitted directly between your device and Google's own servers using Google's official Drive and Sheets APIs, over an encrypted connection. It does not pass through, and is not routed to, stored on, or otherwise accessible to, any server operated by Barzig Lab Inc. Google itself processes this data as the Drive/Sheets service you have chosen to use, subject to Google's own privacy practices.</p>
     <p>The only circumstances in which we would disclose Google user data are: (a) with your explicit direction or consent, (b) to comply with a valid legal process such as a court order or subpoena, or (c) to investigate or prevent security incidents, fraud, or abuse. Outside of these circumstances, no one other than you and Google has access to this data.</p>
 
     <h3>Data Protection for Sensitive Data</h3>
@@ -205,29 +151,29 @@
     <ul>
       <li><strong>Encryption in transit:</strong> All communication with Google's APIs occurs over encrypted HTTPS/TLS connections.</li>
       <li><strong>Secure credential storage:</strong> OAuth access and refresh tokens issued by Google are stored only on your device, using your device's secure, encrypted storage facilities (such as Android Keystore-backed encrypted storage). Tokens are never transmitted to or stored on Barzig Lab Inc. servers, because Barzig Lab Inc. does not operate any backend server for this feature.</li>
-      <li><strong>Minimum necessary access:</strong> The app requests only the single Google Sheets scope needed to provide the feature, and only after you explicitly grant consent through Google's own authorization screen.</li>
-      <li><strong>No server-side storage:</strong> Because the app communicates directly with Google's API from your device, Barzig Lab Inc. has no server-side infrastructure that stores, logs, or otherwise has access to your Google account credentials or spreadsheet contents.</li>
+      <li><strong>Minimum necessary, non-sensitive access:</strong> The app requests only the drive.file scope &mdash; the narrowest scope capable of supporting these features &mdash; and relies on Google's own Picker so that file and folder access is limited to what you explicitly select, rather than requesting standing access to your entire Drive.</li>
+      <li><strong>No server-side storage:</strong> Because the app communicates directly with Google's APIs from your device, Barzig Lab Inc. has no server-side infrastructure that stores, logs, or otherwise has access to your Google account credentials, spreadsheet contents, or exported files.</li>
       <li><strong>Limited Use compliance:</strong> Our access to and use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
     </ul>
 
     <h3>Human Access to Google Data</h3>
-    <p>Barzig Lab Inc. does not routinely access or review your Google Sheets data. Human access, if ever required, is limited to situations such as responding to your support request, investigating security or abuse issues, complying with applicable law, or when you have explicitly granted permission.</p>
+    <p>Barzig Lab Inc. does not routinely access or review your Google Drive or Sheets data. Human access, if ever required, is limited to situations such as responding to your support request, investigating security or abuse issues, complying with applicable law, or when you have explicitly granted permission.</p>
 
     <h3>Storage and Retention of Google Data</h3>
-    <p>Spreadsheet content itself is not stored or retained by Barzig Lab Inc. at any point &mdash; it is read from and written to Google Sheets in real time, directly between your device and Google's servers, and is not persisted on our side.</p>
-    <p>To support app functionality, the app may temporarily cache a small amount of data locally on your device, such as the spreadsheet ID, selected sheet name, and the results of your most recent conversion. This local cache is retained only until it is overwritten by your next sync, you clear it from within the app, or you uninstall the app.</p>
-    <p>The underlying data in your Google Sheets remains in your Google account, governed by your Google account settings and Google's own privacy practices, until you delete or modify it yourself.</p>
+    <p>Spreadsheet content and exported ZIP files are not stored or retained by Barzig Lab Inc. at any point &mdash; they are read from and written to Google Drive/Sheets in real time, directly between your device and Google's servers, and are not persisted on our side.</p>
+    <p>To support app functionality, the app may temporarily cache a small amount of data locally on your device, such as the spreadsheet or folder ID, its name, and the results of your most recent conversion or export. This local cache is retained only until it is overwritten by your next sync or export, you clear it from within the app, or you uninstall the app.</p>
+    <p>The underlying data in your Google Sheets and the exported ZIP files in your Drive remain in your Google account, governed by your Google account settings and Google's own privacy practices, until you delete or modify them yourself.</p>
 
     <h3>Deleting Google Data</h3>
     <p>You can delete Google user data associated with the app at any time by:</p>
     <ul>
-      <li>Clearing the app's local storage or uninstalling the app, which removes the locally cached spreadsheet ID, sheet name, and recent conversion results described above.</li>
-      <li>Editing or deleting the relevant rows or spreadsheets directly in Google Sheets or Google Drive.</li>
+      <li>Clearing the app's local storage or uninstalling the app, which removes the locally cached spreadsheet/folder ID, name, and recent conversion or export results described above.</li>
+      <li>Deleting the relevant spreadsheet rows, spreadsheets, or exported ZIP files directly in Google Sheets or Google Drive.</li>
       <li>Revoking the app's access to your Google account (see "Revoking Google Access" below), which immediately and permanently stops the app from reading or writing any further data.</li>
     </ul>
 
     <h3>Revoking Google Access</h3>
-    <p>You may revoke the app's Google account access at any time from your Google account security settings (<a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">myaccount.google.com/permissions</a>). After access is revoked, the app will no longer be able to read from or write to your Google Sheets unless you authorize access again.</p>
+    <p>You may revoke the app's Google account access at any time from your Google account security settings (<a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">myaccount.google.com/permissions</a>). After access is revoked, the app will no longer be able to read from or write to your selected Google Sheets or Drive folders unless you authorize access again.</p>
 
     <h2>Scan and Conversion History</h2>
     <p>The app may store recent scan and conversion history locally on your device so that you can reopen, review, or export previous conversions.</p>
@@ -239,7 +185,7 @@
     <p>Used only to scan barcodes.</p>
 
     <h3>Internet Access</h3>
-    <p>Used for optional features such as Google Sheets synchronization and authorized spreadsheet data exchange.</p>
+    <p>Used for optional features such as Google Sheets synchronization and exporting barcode image ZIP files to Google Drive, using files/folders you explicitly authorize.</p>
 
     <h3>Vibration Access</h3>
     <p>Used to provide scan feedback.</p>
@@ -250,12 +196,12 @@
     <h2>Data Sharing</h2>
     <p>Barzig Lab Inc. does not sell personal information.</p>
     <p>Barcode conversion operations are performed locally on your device unless you choose an optional cloud-connected feature.</p>
-    <p>If you choose to use Google Sheets integration, selected spreadsheet data is exchanged directly with Google's own servers, only as authorized by you and only for the purpose of providing the app's spreadsheet import, conversion, and synchronization features. Barzig Lab Inc. does not share, transfer, or disclose this data to any other third party. See the "Sharing, Transfer, and Disclosure of Google Data" section above for details.</p>
+    <p>If you choose to use Google Drive integration, spreadsheet data and exported ZIP files are exchanged directly with Google's own servers, only as authorized by you and only for the purpose of providing the app's spreadsheet import/conversion and Drive export features. Barzig Lab Inc. does not share, transfer, or disclose this data to any other third party. See the "Sharing, Transfer, and Disclosure of Google Data" section above for details.</p>
 
     <h2>Data Retention</h2>
     <p>Local scan history, conversion history, and application data are stored on your device.</p>
     <p>You may delete local app data by clearing the application's storage or uninstalling the application.</p>
-    <p>Google Sheets data remains in your Google account until removed by you.</p>
+    <p>Google Sheets data and exported ZIP files remain in your Google account/Drive until removed by you.</p>
 
     <h2>Children's Privacy</h2>
     <p>EAN UPC to QR is not directed to children under 13.</p>
@@ -274,14 +220,6 @@
 
     <footer>
       <p>&copy; 2026 Barzig Lab Inc. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="ean-upc-to-qr-privacy-policy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="legal-notices.html">Legal Notices</a>
-        <a href="support.html">Support</a>
-      </div>
     </footer>
   </main>
 </body>
