@@ -50,139 +50,139 @@
     <priority>1.0</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/upc-to-gs1-qr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/gs1/upc-to-gs1-qr/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/gs1/fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/gs1/upc-to-gs1-qr/"/>
+    <loc>https://www.barzig.com/upc-to-gs1-qr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/upc-to-gs1-qr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/upc-to-gs1-qr/"/>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/studio/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/gs1/studio/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/gs1/fr/studio/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/gs1/studio/"/>
+    <loc>https://www.barzig.com/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/studio/"/>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/faq/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/gs1/faq/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/gs1/fr/faq/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/gs1/faq/"/>
+    <loc>https://www.barzig.com/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/faq/"/>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/about/</loc>
+    <loc>https://www.barzig.com/about/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/terms/</loc>
+    <loc>https://www.barzig.com/terms/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/open-source/</loc>
+    <loc>https://www.barzig.com/open-source/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/barcode-api/</loc>
+    <loc>https://www.barzig.com/barcode-api/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/digital-link/</loc>
+    <loc>https://www.barzig.com/digital-link/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/sunrise-2027/</loc>
+    <loc>https://www.barzig.com/sunrise-2027/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/convert-upc-to-gs1-qr/</loc>
+    <loc>https://www.barzig.com/convert-upc-to-gs1-qr/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/digital-link-examples/</loc>
+    <loc>https://www.barzig.com/digital-link-examples/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/application-identifiers/</loc>
+    <loc>https://www.barzig.com/application-identifiers/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/tools/</loc>
+    <loc>https://www.barzig.com/tools/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/tools/gs1-ai-parser/</loc>
+    <loc>https://www.barzig.com/tools/gs1-ai-parser/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/tools/digital-link-validator/</loc>
+    <loc>https://www.barzig.com/tools/digital-link-validator/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/tools/barcode-size-calculator/</loc>
+    <loc>https://www.barzig.com/tools/barcode-size-calculator/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/tools/quiet-zone-calculator/</loc>
+    <loc>https://www.barzig.com/tools/quiet-zone-calculator/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/gs1/upc-to-gs1-qr/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/gs1/fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/gs1/upc-to-gs1-qr/"/>
+    <loc>https://www.barzig.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/upc-to-gs1-qr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/upc-to-gs1-qr/"/>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/fr/studio/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/gs1/studio/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/gs1/fr/studio/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/gs1/studio/"/>
+    <loc>https://www.barzig.com/fr/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/studio/"/>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 <url>
-    <loc>https://www.barzig.com/gs1/fr/faq/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/gs1/faq/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/gs1/fr/faq/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/gs1/faq/"/>
+    <loc>https://www.barzig.com/fr/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.barzig.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.barzig.com/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.barzig.com/faq/"/>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
